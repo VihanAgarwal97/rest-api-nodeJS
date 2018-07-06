@@ -1,0 +1,20 @@
+{
+  "name": "rest-api-nodejs",
+  "version": "1.0.0",
+  "description": "A simple nodeJS RESTful API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js "
+  },
+  "author": "Vihan Agarwal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.2.1",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}
