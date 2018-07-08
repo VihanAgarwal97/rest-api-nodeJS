@@ -14,8 +14,8 @@ const orderRoutes = require('./api/routes/orders');
 //Start a new express app
 const app = express();
 
-const dbURI = "mongodb://VihanAgarwal:" + "VihanAgarwal"+ "@rest-api-nodejs-shard-00-00-vmgro.mongodb.net:27017,rest-api-nodejs-shard-00-01-vmgro.mongodb.net:27017,rest-api-nodejs-shard-00-02-vmgro.mongodb.net:27017/test?ssl=true&replicaSet=rest-api-nodeJS-shard-0&authSource=admin&retryWrites=true";
-
+const dbURI = "mongodb://VihanAgarwal:VihanAgarwal@rest-api-nodejs-shard-00-00-vmgro.mongodb.net:27017,rest-api-nodejs-shard-00-01-vmgro.mongodb.net:27017,rest-api-nodejs-shard-00-02-vmgro.mongodb.net:27017/test?ssl=true&replicaSet=rest-api-nodeJS-shard-0&authSource=admin&retryWrites=true";
+//const dbURI = "mongodb+srv://VihanAgarwal:VihanAgarwal@rest-api-nodejs-vmgro.mongodb.net/test?retryWrites=true";
 mongoose.connect(dbURI, { useNewUrlParser: true, replicaSet: "rest-api-nodeJS-shard-0"});
 
 //Debbuger for requests.
